@@ -1,0 +1,58 @@
+
+
+/* Titre */
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 40px 0 20px;
+    color: #5c5656;
+    border-bottom: 2px solid #444;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Liste des services */
+ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+ul li {
+    background: #D2E14C;
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 4px solid #fff;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+ul li strong {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+ul li:hover {
+    background: #FFEA2E;
+    transform: translateX(5px);
+    border-left: 4px solid #999;
+}
+
+/* Lien contact */
+p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid #fff;
+    transition: 0.3s;
+}
+
+p a:hover {
+    color: #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+

@@ -1,0 +1,98 @@
+/* Titre principal */
+h2 {
+    text-align: center;
+    font-size: 2.2em;
+    margin: 30px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #555353;
+}
+
+/* Conteneur global (map + formulaire) */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* 2 colonnes */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+    padding: 20px;
+}
+
+/* Carte Google */
+.contact-container iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.08);
+}
+
+/* Formulaire */
+.contact-form {
+    background: rgba(249, 242, 242, 0.95);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.08);
+}
+
+/* Labels */
+.contact-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #a09898;
+    font-size: 1em;
+}
+
+/* Inputs et textarea */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: none;
+    border-radius: 8px;
+    background: #807c7c;
+    color: #fff;
+    font-size: 1em;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background: #938f8f;
+    outline: 2px solid #555;
+}
+
+/* Bouton */
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #ffffff, #cfcfcf);
+    color: #000;
+    font-weight: bold;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: linear-gradient(135deg, #cfcfcf, #ffffff);
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive (mobile/tablette) */
+@media(max-width: 900px) {
+    .contact-container {
+        grid-template-columns: 1fr;  /* Passe en colonne */
+    }
+
+    .contact-container iframe {
+        min-height: 300px;
+    }
+}

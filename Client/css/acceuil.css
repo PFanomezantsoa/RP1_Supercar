@@ -1,0 +1,76 @@
+/* Section Hero */
+.hero {
+    max-width: 1200px;      /* largeur maximale pour un affichage centré */
+    margin: 20px auto;      /* centre la section horizontalement */
+    padding: 20px;
+    text-align: center;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+/* Titre principal */
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+/* Paragraphe principal */
+.hero p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Images des voitures */
+.hero img {
+    width: 30%;              /* trois images côte à côte */
+    height: auto;
+    margin: 10px 1%;         /* espace entre les images */
+    border-radius: 10px;     /* coins arrondis */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* légère ombre pour effet luxe */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Effet hover sur les images */
+.hero img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+/* Texte de description longue */
+.hero p:last-of-type {
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 1em;
+    color: #444;
+}
+
+.marque-logo {
+    width: 150px;   /* largeur fixe */
+    height: 150px;  /* hauteur fixe */
+    object-fit: contain; /* l'image garde ses proportions sans être étirée */
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+    background-color: #fff; /* optionnel, pour voir le cadre */
+    border: 1px solid #ccc; /* optionnel, pour vérifier la taille */
+    padding: 10px; /* optionnel, pour l'espace autour du logo */
+}
+body{
+     background-color: #FFFDE7;
+}
+
+
+/* Responsive pour mobiles */
+@media (max-width: 768px) {
+    .hero img {
+        width: 80%;
+        margin: 10px 0;
+    }
+    
+    .hero h2 {
+        font-size: 2em;
+    }
+}

@@ -1,0 +1,82 @@
+/* Tableau principal */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+/* En-têtes */
+th {
+    background: #111;
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Lignes du tableau */
+td {
+    padding: 12px;
+    vertical-align: middle;
+    color: #111;
+}
+
+/* Lignes alternées */
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Colonne Action plus large et boutons alignés */
+th:last-child, td:last-child {
+    width: 200px;
+    text-align: center;
+}
+
+td:last-child a {
+    display: inline-block;
+    width: 80px;
+    padding: 6px 0;
+    border-radius: 6px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px; /* espace entre les boutons */
+}
+
+/* Bouton Accepter - vert */
+td a[href*="accepter"] {
+    background: #28a745;
+}
+
+td a[href*="accepter"]:hover {
+    background: #218838;
+}
+
+/* Bouton Refuser - rouge */
+td a[href*="refuser"] {
+    background: #dc3545;
+}
+
+td a[href*="refuser"]:hover {
+    background: #c82333;
+}
+
+/* Bouton Refuser - rouge */
+td a[href*="supprimer"] {
+    background: #32181b;
+}
+
+td a[href*="supprimer"]:hover {
+    background: #836e70;
+}
+
+/* Titre */
+h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+}

@@ -1,0 +1,101 @@
+/* Corps général */
+div {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5; /* gris clair */
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centre verticalement */
+    align-items: center;     /* centre horizontalement */
+    color: #111;
+}
+
+/* Conteneur principal */
+div > *:not(header):not(footer) {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+}
+
+/* Titre */
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #222;
+    letter-spacing: 1px;
+    text-align: center; /* centre horizontalement */
+}
+
+/* Messages */
+p {
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center; /* centre horizontalement */
+}
+
+/* Formulaire */
+form {
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+/* Labels */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #222;
+}
+
+/* Inputs */
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+form input:focus {
+    border-color: #555;
+    outline: none;
+}
+
+/* Bouton */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #111;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #333;
+}
+
+/* Lien "Se connecter" */
+form + p a {
+    color: #111;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+form + p a:hover {
+    text-decoration: underline;
+}

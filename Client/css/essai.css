@@ -1,0 +1,82 @@
+body {
+    background-color: #FFFDE7;  /* fond noir élégant */
+    color: #5c5959;
+    padding: 20px;
+}
+
+/* Titre */
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: #3f3e3e;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Message de succès */
+p[style] {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #4dff4d !important; /* vert vif */
+}
+
+/* Formulaire */
+form {
+    max-width: 500px;
+    margin: auto;
+    background-color: #e0dfdf;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+}
+
+/* Labels inline (ex: Nom: Email:) */
+form br {
+    display: none; /* supprime les sauts de ligne br pour un rendu plus net */
+}
+
+form input, 
+form select, 
+form button {
+    width: 100%;
+    padding: 10px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+/* Champs texte */
+form input, form select {
+    background-color: #2a2a2a;
+    color: #eee;
+    outline: none;
+}
+
+form input:focus, form select:focus {
+    background-color: #333;
+    border: 1px solid #888;
+}
+
+/* Bouton */
+form button {
+    background: linear-gradient(90deg, #fff, #ccc);
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: linear-gradient(90deg, #ccc, #fff);
+    transform: scale(1.03);
+}
+
+/* Date et heure readonly */
+form input[readonly] {
+    background-color: #222;
+    color: #aaa;
+    cursor: not-allowed;
+}
